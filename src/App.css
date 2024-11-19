@@ -1,8 +1,8 @@
 .main-container {
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Full viewport height */
-    overflow: hidden; /* Prevent scrolling outside the component-container */
+    height: 100vh; 
+    overflow: hidden; 
     font-size: clamp(1rem, 1.5vw, 2rem);
 }
 
@@ -11,12 +11,12 @@
     justify-content: center;
     align-items: center;
     padding: 8px 0;
-    height: 7%; /* Take up 10% of the viewport height */
+    height: 7%; 
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: white; /* Optional: Background color to ensure visibility */
-    z-index: 10; /* Keep it above other elements */
+    background-color: white; 
+    z-index: 10; 
 }
 
 .logo-container img {
@@ -24,11 +24,11 @@
 }
 
 .component-container {
-    position: fixed; /* Position between fixed logo and buttons */
-    top: 7%; /* Start below the logo */
-    bottom: 8%; /* End above the buttons */
+    position: fixed; 
+    top: 7%; 
+    bottom: 8%; 
     width: 100%;
-    overflow-y: auto; /* Enable scrolling inside this container */
+    overflow-y: auto; 
 }
 
 .button-container {
