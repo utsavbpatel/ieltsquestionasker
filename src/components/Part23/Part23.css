@@ -1,0 +1,291 @@
+/* Main Container */
+.part-main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    font-weight: 600;
+    font-size: clamp(1rem, 1.3vw, 2rem);
+}
+.fade-out {
+    animation: fadeOut 0.4s forwards;
+}
+
+.fade-in {
+    animation: fadeIn 0.4s forwards;
+}
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* CheckBox Select */
+.checkbox-select {
+    margin-top: 20px;
+}
+
+/* Typography */
+.normal-text {
+    font-weight: 500;
+}
+
+.semibold-text {
+    font-weight: 600;
+}
+
+.bold-text {
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.bold-text2 {
+    font-weight: 700;
+}
+
+/* Parts Button Container */
+.parts-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.parts-button-box {
+    width: 80vw;
+    height: 45px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+.parts-button-container button {
+    border: none;
+    width: 100%;
+    font-size: clamp(1rem, 1vw, 2rem);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #333333;
+}
+
+.parts-button-container button.button-active1,
+.parts-button-container button.button-active2 {
+    background-color: #3777FD;
+    color: white;
+    font-weight: 600;
+}
+
+/* Box */
+.box {
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+/* Card Container */
+.card-container {
+    width: 80vw;
+    background-color: #f3f3f3;
+    color: #333333;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* Question Container */
+.question-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 15px 0;
+}
+
+.question-data-box-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.questions-list {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.question-list-box {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: 500;
+}
+.cues-q{
+    font-size: clamp(1rem, 1vw, 2rem);
+}
+.question-list-box.active {
+    background-color: #3777FD;
+    color: white;
+    border: none;
+    font-weight: 600;
+}
+
+.question-data-box {
+    width: 100%;
+    font-size: clamp(1rem, 1vw, 2rem);
+}
+.cues-list li{
+    font: normal;
+}
+/* Speak Icon Container */
+.speak-icon-container {
+    background-color: #ccc;
+    color: #333333;
+    width: 35px;
+    height: 30px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.speak-icon-container:hover {
+    background-color: #333333;
+    color: #ccc;
+}
+
+/* Click Button Container */
+.click-button-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.click-button-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #3777FD;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(1rem, 1vw, 2rem);
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.click-button-container button:hover {
+    background-color: #285bb5;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* Icon Container */
+.icon-container button {
+    border: none;
+    width: fit-content;
+    background-color: white;
+}
+
+.icon-container i {
+    font-size: 20px;
+    color: #333333;
+}
+
+.icon-container i:hover {
+    font-size: 21px;
+}
+
+/* Search Container */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border: 1px solid #ccc;
+}
+
+.searchBox {
+    width: 100%;
+    height: 40px;
+    border: none;
+    padding: 0px 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.searchBox:focus {
+    outline: none;
+    border: none;
+}
+
+/* Controls */
+.controls {
+    width: 50%;
+    height: 40px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+
+.controls-box {
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: row;
+    color: #333333;
+    gap: 5px;
+}
+
+/* Clickable Button Container */
+.clickable-button-container {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+}
+
+.clickable-button-container button {
+    padding: 5px 10px;
+    height: 100%;
+    width: 50px;
+    border: none;
+    background-color: #3777FD;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}

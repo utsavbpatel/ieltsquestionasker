@@ -1,0 +1,65 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent scrolling outside the component-container */
+    font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    height: 7%; /* Take up 10% of the viewport height */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white; /* Optional: Background color to ensure visibility */
+    z-index: 10; /* Keep it above other elements */
+}
+
+.logo-container img {
+    width: 140px;
+}
+
+.component-container {
+    position: fixed; /* Position between fixed logo and buttons */
+    top: 7%; /* Start below the logo */
+    bottom: 8%; /* End above the buttons */
+    width: 100%;
+    overflow-y: auto; /* Enable scrolling inside this container */
+}
+
+.button-container {
+    background-color: #EDF1F4;
+    color: #1a1a1c;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 8%; 
+    z-index: 10; 
+}
+
+.button-container button {
+    border: none;
+    background-color: #EDF1F4;
+    color: #1a1a1c;
+    width: 50%;
+    padding: 15px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: clamp(1rem, 1vw, 2rem);
+    transition: background-color 0.3s ease;
+}
+
+.button-container button.button-active1,
+.button-container button.button-active2 {
+    background-color: #3777FD;
+    color: white;
+    font-weight: 600;
+}
